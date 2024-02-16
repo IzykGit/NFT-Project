@@ -24,11 +24,37 @@ body {
     text-align: left;
 }
 
+.nftImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nftImage:hover {
+    .image {
+        filter: contrast(2);
+        cursor: pointer;
+    }
+
+    .view {
+        visibility: visible;
+    }
+}
+
 
 .image {
     border-radius: 20px;
     width: 300px;
+    transition: 0.2s;
 }
+
+
+.view {
+    position: absolute;
+    visibility: hidden;
+}
+
+
 
 @media screen and (max-width: 420px) {
     .image {
@@ -40,6 +66,12 @@ body {
 .nftName {
     color: white;
     font-size: 25px;
+    transition: 0.2s;
+}
+
+.nftName:hover {
+    color: #33f0e9;
+    cursor: pointer;
 }
 
 .nftDescription {
@@ -88,6 +120,16 @@ body {
 
 .creator {
     color: #8fa7c1;
+}
+
+.creatorName {
+    color: white;
+    transition: 0.2s;
+}
+
+.creatorName:hover {
+    color: #33f0e9;
+    cursor: pointer;
 }
 
 
