@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
-;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 body {
     background-color: #0d1a2d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .card {
@@ -16,14 +18,13 @@ body {
     background-color: #15273f;
     box-shadow: 0px 0px 15px 10px #0c1729;
     border-radius: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    position: relative;
-    top: 100px;
+    max-width: 300px;
 }
 
 .nftImage {
